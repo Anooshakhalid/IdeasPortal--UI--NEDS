@@ -1,4 +1,4 @@
-# Ideas Identifier UI - NED Scholars
+# Ideas Identifier User Interface - NED Scholars
 
 This repository contains the **UI components only** for the Ideas Identifier Portal developed for NED Scholars. It is focused solely on frontend structure and styling using PHP and standard web technologies.
 
