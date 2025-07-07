@@ -38,6 +38,9 @@ Below are snapshots of the core UI pages included in this repository:
 ### 3. Registration Page (`registration.php`)
 ![Registration Page](screenshots/registration.png)
 
+### 3. User Page (`user.php`)
+![User Page](screenshots/user.png)
+
 
 ## Confidentiality Notice
 
