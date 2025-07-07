@@ -25,6 +25,20 @@ These files are strictly related to the user interface and layout. No backend lo
 - Clean, modern layout structure with a fixed footer.
 - Back navigation links for improved user flow.
 
+## UI Previews
+
+Below are snapshots of the core UI pages included in this repository:
+
+### 1. Landing Page (`index.php`)
+![Landing Page](screenshots/index.png)
+
+### 2. Login Page (`login.php`)
+![Login Page](screenshots/login.png)
+
+### 3. Registration Page (`registration.php`)
+![Registration Page](screenshots/registration.png)
+
+
 ## Confidentiality Notice
 
 This repository contains only the public-facing UI pages. All backend logic, authentication processes, database connections, and additional internal files are part of a private system and are **not** included or meant to be shared.
