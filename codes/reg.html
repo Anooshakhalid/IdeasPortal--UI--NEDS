@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IDEAS IDENTIFIER PORTAL - Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #ffffff, #f7f9fc);
+      border: 5px solid #1e88e5;
+    }
+    body {
+      color: #2c3e50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 12px 0;
+      background-color: #0d1b49;
+      border-bottom: 2px solid #90caf9;
+    }
+    .open-book {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      width: 90%;
+      max-width: 1000px;
+      margin: 50px auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+      background: white;
+    }
+    .left-page, .right-page {
+      width: 50%;
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .right-page {
+      background: linear-gradient(to bottom right, #0d47a1 10%, #ffffff 20%, #e3f2fd 80%);
+      color: #ffffff;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      border-left: 1px solid #90caf9;
+      position: relative;
+    }
+    .right-page img.logo {
+      max-width: 120px;
+      margin: 0 auto 20px;
+    }
+    .right-page h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: black;
+    }
+    .right-page p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: black;
+    }
+    .card {
+      width: 100%;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 15px;
+      text-align: left;
+    }
+    .card h1 {
+      font-size: 2rem;
+      color: #0d47a1;
+      margin-bottom: 8px;
+    }
+    .card p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      color: #444;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #42a5f5, #0d1b49);
+      border: none;
+      color: white;
+      padding: 14px 0;
+      width: 100%;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      font-weight: bold;
+    }
+    .btn-primary:hover {
+      background: #1565c0;
+      transform: scale(1.03);
+    }
+    .text-center a {
+      color: #1e88e5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-link.right {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 0.9rem;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      z-index: 10;
+      background: transparent;
+      border: 2px solid #0d1b49;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+      display: inline-block;
+    }
+    .back-link.right:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #0d1b49;
+      border-color: #bbdefb;
+    }
+    @media (max-width: 768px) {
+      .open-book {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 0;
+      }
+      .left-page, .right-page {
+        width: 100%;
+        padding: 30px 20px;
+        border-left: none;
+      }
+      .right-page {
+        border-top: 1px solid #90caf9;
+      }
+      .right-page img.logo {
+        max-width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar"></div>
+
+  <div class="open-book">
+    <div class="left-page">
+      <div class="card">
+        <h1>Sign Up</h1>
+        <p>Visit Our Problem Identifier!</p>
+        <form action="#" method="POST" oninput='conpass.setCustomValidity(conpass.value != pass.value ? "Passwords do not match." : "")'>
+          <label for="name">Username</label>
+          <input type="text" id="name" name="name" placeholder="Enter your username" required />
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Enter your email" required />
+          <label for="pass">Password</label>
+          <input type="password" id="pass" name="password" placeholder="Enter password" required />
+          <label for="conpass">Confirm Password</label>
+          <input type="password" id="conpass" name="conpass" placeholder="Confirm password" required />
+          <button class="btn-primary" name="signup">Sign up</button>
+        </form>
+        <p class="text-center" style="text-align: center; width: 100%; margin-top: 20px;">
+          Already have an account?
+          <a href="login.html" style="color:#0d47a1;">Sign in instead</a>
+        </p>
+      </div>
+    </div>
+    <div class="right-page">
+      <img src="./assets/img/favicon/favicon.ico" alt="Portal Logo" class="logo" />
+      <h2>Welcome!</h2>
+      <p>Your gateway to innovative ideas begins here.</p>
+      <a href="index.html" class="back-link right">BACK</a>
+    </div>
+  </div>
+
+</body>
+</html>
