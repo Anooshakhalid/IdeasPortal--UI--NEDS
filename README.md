@@ -1,4 +1,4 @@
-# Ideas Identifier UI - NED Scholars
+# Ideas Identifier User Interface - NED Scholars
 
 This repository contains the **UI components only** for the Ideas Identifier Portal developed for NED Scholars. It is focused solely on frontend structure and styling using PHP and standard web technologies.
 
@@ -24,6 +24,21 @@ These files are strictly related to the user interface and layout. No backend lo
 - Styled alert messages using PHP sessions.
 - Clean, modern layout structure with a fixed footer.
 - Back navigation links for improved user flow.
+
+## UI Previews
+
+Below are snapshots of the core UI pages included in this repository:
+
+### 1. Landing Page (`index.php`)
+![Landing Page](screenshots/index.png)
+
+### 2. Login Page (`login.php`)
+![Login Page](screenshots/login.png)
+
+### 3. Registration Page (`registration.php`)
+![Registration Page](screenshots/registration.png)
+
+
 
 ## Confidentiality Notice
 
